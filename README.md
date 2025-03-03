@@ -1,7 +1,7 @@
 # Rainfall-Humidity-Prediction-System
 This project is a Flask-powered web application designed to predict rainfall probability using a Random Forest model and estimate humidity levels with a Linear Regression model. Trained on historical weather data, the system enables users to input key meteorological parameters—such as wind speed, wind direction, cloud cover, and pressure—to generate accurate forecasts. 
 
-📌 #Project Overview
+📌***Project Overview***
 
 ✅ Predicts Rainfall based on wind speed, wind direction, cloud coverage, and pressure.
 
@@ -11,7 +11,7 @@ This project is a Flask-powered web application designed to predict rainfall pro
 
 ✅ Built with Flask for a simple and interactive web interface.
 
-#🛠️ Tech Stack
+🛠️ ***Tech Stack***
 
 -> Python (Flask, Scikit-Learn, NumPy, Pandas)
 
