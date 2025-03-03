@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainfall and Humidity Prediction</title>
+</head>
+<body>
+    <h1>Rainfall and Humidity Prediction</h1>
+
+    <form action="/predict" method="POST">
+        <label for="windspeed">Windspeed:</label><br>
+        <input type="number" id="windspeed" name="windspeed" required><br><br>
+        
+        <label for="winddirection">Wind Direction:</label><br>
+        <input type="number" id="winddirection" name="winddirection" required><br><br>
+        
+        <label for="cloud">Cloud:</label><br>
+        <input type="number" id="cloud" name="cloud" required><br><br>
+        
+        <label for="pressure">Pressure:</label><br>
+        <input type="number" id="pressure" name="pressure" required><br><br>
+        
+        <input type="submit" value="Predict">
+    </form>
+
+    {% if rainfall is not none %}
+        <h3>Predicted Rainfall: {{ rainfall }}</h3>
+        <h3>Predicted Humidity: {{ humidity }}%</h3>
+    {% endif %}
+</body>
+</html>
